@@ -1,1 +1,1 @@
-export const print = msg => console.log(`${msg} from print.js`);
+export const print = msg => console.log(`${msg} from print.js.`);

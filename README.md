@@ -16,3 +16,10 @@
 
 ## 3 - React-Router
 * [React Router DOM](https://reacttraining.com/react-router/web/guides/quick-start)
+
+## 4 - Flux Architecture
+* [Flux](http://facebook.github.io/flux/)
+* [Standard for Flux action objects](https://github.com/redux-utilities/flux-standard-action)
+
+## 5 - Redux
+* [Redux](https://redux.js.org/)

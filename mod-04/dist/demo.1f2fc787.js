@@ -105,7 +105,50 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   // Override the current require with this new one
   return newRequire;
 })({"src/demo.js":[function(require,module,exports) {
+function createIncrement() {
+  var value = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 1;
+  var incrementAction = {
+    type: 'increment',
+    payload: {
+      by: value
+    }
+  };
+  return incrementAction;
+}
 
+var listeners = [];
+var store = {
+  counter: 0,
+  name: 'Maurice'
+};
+Object.freeze(store);
+
+function dispatch(action) {
+  switch (action.type) {
+    case 'increment':
+      //   store.counter += action.payload.by;
+      store = Object.assign({}, store, {
+        counter: store.counter + action.payload.by
+      });
+      Object.freeze(store);
+      break;
+
+    default:
+  }
+
+  listeners.forEach(function (l) {
+    return l(store);
+  });
+}
+
+listeners.push(function (s) {
+  return console.log('Listener one', s);
+});
+dispatch(createIncrement(5));
+listeners.push(function (s) {
+  return console.log('Listener two', s);
+});
+dispatch(createIncrement());
 },{}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
@@ -133,7 +176,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50383" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "54641" + '/');
 
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);
@@ -276,3 +319,4 @@ function hmrAccept(bundle, id) {
   });
 }
 },{}]},{},["node_modules/parcel-bundler/src/builtins/hmr-runtime.js","src/demo.js"], null)
+//# sourceMappingURL=/demo.1f2fc787.map

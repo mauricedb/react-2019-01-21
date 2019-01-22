@@ -23,3 +23,7 @@
 
 ## 5 - Redux
 * [Redux](https://redux.js.org/)
+
+## 6 - RxJS
+* [ReactiveX](http://reactivex.io/)
+* [RxJS](https://rxjs.dev/)

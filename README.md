@@ -40,4 +40,5 @@
 * [Storybook](https://storybook.js.org/)
 
 ## 9 - TypeScript-Introduction
-* []()
+* [TypeScript](http://www.typescriptlang.org/index.html)
+* [DefinitelyTyped](https://github.com/DefinitelyTyped/)

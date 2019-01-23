@@ -18,7 +18,8 @@ MovieListCard.propTypes = {
     title: PropTypes.string.isRequired,
     overview: PropTypes.string.isRequired,
     image: PropTypes.string.isRequired
-  }).isRequired
+  }).isRequired,
+  onMovieClicked: PropTypes.func.isRequired
 };
 
 export default MovieListCard;

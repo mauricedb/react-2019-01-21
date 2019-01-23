@@ -29,3 +29,15 @@
 * [RxJS](https://rxjs.dev/)
 * [RX Marbles](https://rxmarbles.com/)
 
+## 7 - Better Components
+* [React Developer Tools](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi?hl=en-US&utm_source=chrome-ntp-launcher)
+
+## 8 - Unit Testing
+* [Jest](https://jestjs.io/)
+* [Enzyme](https://airbnb.io/enzyme/)
+* [React Testing Library](https://testing-library.com/react)
+* [Google Chrome Developers](https://www.youtube.com/channel/UCnUYZLuoy1rq1aVMwx4aTzw)
+* [Storybook](https://storybook.js.org/)
+
+## 9 - TypeScript-Introduction
+* []()
